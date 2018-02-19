@@ -25,6 +25,12 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 TARGET_SCREEN_HEIGHT := 2960
 TARGET_SCREEN_WIDTH := 1440
 
+# APN
+ifneq ($(findstring aosp, $(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES += \
+    device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
+endif
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.samsungexynos9810 \
