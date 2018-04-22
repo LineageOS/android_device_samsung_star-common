@@ -153,4 +153,5 @@
         <item>7</item>
     </integer-array>
     <bool name="config_setColorTransformAccelerated">true</bool>
+    <bool name="config_haveHigherAspectRatioScreen">true</bool>
 </resources>
