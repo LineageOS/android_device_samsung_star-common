@@ -119,8 +119,10 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 
 # Lineage hardware
+ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
 BOARD_HARDWARE_CLASS := \
     hardware/samsung/lineagehw
+endif
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
