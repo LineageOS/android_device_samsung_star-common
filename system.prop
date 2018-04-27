@@ -3,3 +3,6 @@ import /efs/factory.prop
 
 # Disable ConsumerIR
 config.disable_consumerir=true
+
+# Enable ADB authentication
+ro.adb.secure=1
