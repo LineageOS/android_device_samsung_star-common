@@ -492,7 +492,7 @@ on boot
     chmod 0664 /dev/stune/background/schedtune.prefer_perf
 
     write /dev/stune/schedtune.boost 0
-    write /dev/stune/top-app/schedtune.boost 15
+    write /dev/stune/top-app/schedtune.boost 20
     write /dev/stune/top-app/schedtune.prefer_idle 1
     write /dev/stune/foreground/schedtune.boost 10
     write /dev/stune/foreground/schedtune.prefer_idle 1
