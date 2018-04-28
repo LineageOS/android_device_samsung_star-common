@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "00b85998_e4885092",
+        "filename": "sepolicy/private/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2018-04-28T22:56:23Z",
+      "side": 1,
+      "message": "escape dots",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 55
+      },
+      "revId": "a165152fb17df4507c811699d49d04006af8b2ac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
