@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
- * Copyright (C) 2018 The LineageOS Project
- * SPDX-License-Identifier: Apache-2.0
--->
-<resources>
-    <string name="config_navBarLayout" translatable="false">left[.25W],recent[.5WC];home;back[.5WC],right[.25W]</string>
-</resources>

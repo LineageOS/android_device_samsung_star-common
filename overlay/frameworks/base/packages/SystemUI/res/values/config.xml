@@ -5,5 +5,4 @@
 -->
 <resources>
     <bool name="doze_display_state_supported">true</bool>
-    <string name="config_navBarLayout" translatable="false">left[.5W],recent[1WC];home;back[1WC],right[.5W]</string>
 </resources>
