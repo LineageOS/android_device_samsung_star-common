@@ -71,6 +71,27 @@ static void apply_vendor_fingerprint()
   property_override("ro.build.PDA", pda);
 }
 
+static void apply_vendor_date()
+{
+  char buf[70];
+  time_t rawtime;
+  struct tm *timeinfo;
+  std::string date = GetProperty("ro.vendor.build.date.utc", "");
+
+  if (date.empty())
+  {
+    return;
+  }
+
+  rawtime = (time_t)std::stoi(date);
+  timeinfo = gmtime(&rawtime);
+
+  if (strftime(buf, sizeof(buf), "%Y-%m-%d", timeinfo))
+  {
+    property_set("ro.lineage.build.vendor_security_patch", buf);
+  }
+}
+
 static void apply_device_model()
 {
   std::string model = GetProperty("ro.boot.em.model", "");
@@ -86,6 +107,7 @@ static void apply_device_model()
 static void init_target_properties()
 {
   apply_vendor_fingerprint();
+  apply_vendor_date();
   apply_device_model();
 }
 
