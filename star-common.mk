@@ -92,6 +92,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.9810
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    fingerprint.exynos5
+
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
