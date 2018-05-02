@@ -155,4 +155,6 @@
         <item>7</item>
     </integer-array>
     <bool name="config_setColorTransformAccelerated">true</bool>
+    <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
+    <fraction name="config_screenAutoBrightnessDozeScaleFactor">40%</fraction>
 </resources>
