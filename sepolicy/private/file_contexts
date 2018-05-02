@@ -7,3 +7,6 @@
 
 # Power HAL
 /system/bin/hw/android.hardware\.power@1\.0-service\.9810 u:object_r:hal_power_9810_exec:s0
+
+# Lights HAL
+/system/bin/hw/android.hardware\.light@2\.0-service\.9810 u:object_r:hal_light_9810_exec:s0
