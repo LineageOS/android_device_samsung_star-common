@@ -10,3 +10,6 @@
 
 # Lights HAL
 /system/bin/hw/android.hardware\.light@2\.0-service\.9810 u:object_r:hal_light_9810_exec:s0
+
+# LPM
+/system/bin/lpm u:object_r:lpm_exec:s0
