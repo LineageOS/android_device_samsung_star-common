@@ -96,6 +96,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fingerprint.exynos5
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-service.9810
+
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages

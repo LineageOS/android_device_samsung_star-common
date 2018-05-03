@@ -13,3 +13,6 @@
 
 # Lights HAL
 /system/bin/hw/android.hardware\.light@2\.0-service\.9810 u:object_r:hal_light_9810_exec:s0
+
+# Vibrator HAL
+/system/bin/hw/android.hardware\.vibrator@1\.0-service\.9810 u:object_r:hal_vibrator_9810_exec:s0
