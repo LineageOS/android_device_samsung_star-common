@@ -31,6 +31,7 @@ PRODUCT_PACKAGES += \
     init.samsung.rc \
     init.samsungexynos9810.rc \
     init.samsungexynos9810.usb.rc \
+    init.usb.configfs.rc \
     init.baseband.rc \
     init.gps.rc \
     init.wifi.rc \
