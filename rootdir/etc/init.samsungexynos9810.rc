@@ -406,11 +406,6 @@ on boot
     chmod 0664 /dev/stune/foreground/schedtune.prefer_perf
     chmod 0664 /dev/stune/background/schedtune.prefer_perf
 
-    write /dev/stune/schedtune.boost 0
-    write /dev/stune/top-app/schedtune.boost 20
-    write /dev/stune/top-app/schedtune.prefer_idle 1
-    write /dev/stune/background/schedtune.boost -10
-
 # Permission and ownership for SEC PM
     # CPU dynamic hotplug
     chown system system /sys/power/cpuhotplug/enabled
@@ -565,11 +560,6 @@ on boot
     chown system bluetooth /efs/bluetooth/bt_addr
     chmod 0770 /efs/bluetooth
     chmod 0640 /efs/bluetooth/bt_addr
-
-    write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/foreground/cpus 0-3,6-7
-    write /dev/cpuset/background/cpus 0-1
-    write /dev/cpuset/system-background/cpus 0-2
 
 # FactoryApp(SensorHub)
     chown system system /efs/FactoryApp/version
@@ -768,3 +758,13 @@ on property:ro.bootmode=charger
 
 on property:sys.boot_completed=1
     swapon_all /fstab.${ro.hardware}
+
+    write /dev/cpuset/top-app/cpus 0-7
+    write /dev/cpuset/foreground/cpus 0-3,6-7
+    write /dev/cpuset/background/cpus 0-1
+    write /dev/cpuset/system-background/cpus 0-2
+
+    write /dev/stune/schedtune.boost 0
+    write /dev/stune/top-app/schedtune.boost 20
+    write /dev/stune/top-app/schedtune.prefer_idle 1
+    write /dev/stune/background/schedtune.boost -10
