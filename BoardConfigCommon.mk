@@ -1,7 +1,7 @@
 # Copyright (C) 2018 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 
-COMMON_PATH := device/samsung/star-common
+COMMON_PATH := device/samsung/universal9810-common
 
 # Platform
 BOARD_VENDOR := samsung
@@ -132,4 +132,4 @@ endif
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
 # Inherit from the proprietary version
--include vendor/samsung/star-common/BoardConfigVendor.mk
+-include vendor/samsung/universal9810-common/BoardConfigVendor.mk

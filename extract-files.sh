@@ -4,7 +4,7 @@
 
 set -e
 
-DEVICE=star-common
+DEVICE=universal9810-common
 VENDOR=samsung
 
 # Load extractutils and do some sanity checks

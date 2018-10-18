@@ -6,7 +6,7 @@ set -e
 
 # Required!
 VENDOR=samsung
-DEVICE_COMMON=star-common
+DEVICE_COMMON=universal9810-common
 DEVICE="star2lte starlte"
 
 # Load extractutils and do some sanity checks
